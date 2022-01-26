@@ -1,6 +1,8 @@
-﻿namespace AppLogger
+﻿using AppLogger.Factory;
+
+namespace AppLogger
 {
-    public class Logger
+    public class Logger : ILogger
     {
         public void Log(string text) // logs text to console
         {
@@ -8,3 +10,4 @@
         }
     }
 }
+
